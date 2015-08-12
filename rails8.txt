@@ -1,0 +1,72 @@
+models : Active record valiations, callbacks, associations
+
+controllers: Action controller
+
+Views: Action view overview, layouts, Action view form helpers
+
+
+
+
+Architect -what tools and framworks do we need for thiis project
+html, css, javascript, jquery --front end
+mysql - backend
+middle tier, rails 4, ruby 2, Active record, rspec
+
+2. gathering requiremtns
+
+3. design
+Users = id(pk), name
+Phones id(pk), number, user_id(FK)
+(one to many association)
+Notes - id(pk), desc, user_id(FK)
+(one to one assoc) 
+
+4. implementation
+
+5. testing
+
+6. deployment to production
+
+not like flexible 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

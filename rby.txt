@@ -1,0 +1,46 @@
+
+
+we will need sql concepts
+there are different types of associations like one to one and one to many and many to one are the associations as of now i know 
+we have to model the database as of now
+
+Automobile store
+We have to resources here Cusotomers and Autos.
+   Customers 
+   - name, email, phone
+
+    1, name1, name1@gmail.com, 111-111-1111
+    2, name2, name2@gmail.com, 111-111-1112
+    3, name3, name3@gmail.com, 111-111-1113
+ 
+  Autos
+   - make, model, year , vin, customer_id
+
+   honda, civic, 2011, 344343434343, 1
+   toyota, camry, 2012, 343434343, 1
+   lexus, rx350, 2014, 32322424, 3
+   bmw, 328i, 2011, 2332322223,2
+
+ we can probably do one thing, so that this car owner is this guy
+basically repeating the data here, update the phone number we have to update it everywhere
+so repetition is not encouraged. so we wil add foreign key. unique key is the id key
+id column called as primary key
+so with a primary key we can actually retrieve 
+
+vin is the primary key in the Autos table. unique key is the primary key
+
+so now all i can do is rails new automobile_store
+cd automobile_store
+rails g scaffold Customer name:string email:string phone:string
+rails g scaffold Auto name 
+rails convention is calling  customer_id
+this data is being sent back the data 
+
+
+
+
+
+
+
+
+
