@@ -1,0 +1,198 @@
+database.yml shows database connections
+routes will define all the routes to be use
+environment development production testin
+app directory u have basic code 
+images style sheets javascript will basically goes to assets
+to start a rails server we use rails server
+bundle execute rails server local gems
+default port is 3000
+rake file is basically used for defining a basic task
+rake --tasks gives u all the tasks that rake can do , rake is like configuration files
+------------------------
+mvc architecture controller gathers the request and it talks to model model talks to database, 
+views is what displayed to customer, this mvc is basic rails architecture used
+
+database settings database.yml
+model inherits active record and active record provides database stuff
+we have rails scaffold generator this will generate all the stuff for us
+scaffold command also generates migration file and we migrate the database.
+
+These are the basic restful routes. 
+http request       url                    Action       Purpose
+get                    /users                 index        page to list all users
+get                    /users/1              show          page to show user with id1
+get                    /users/new           new           page to make a new user
+post                  /users                   create       create new user
+get                    /users/1/edit        edit           page to edit user with id1
+patch                /users/1               update       update user with id1
+delete               /users/1                destroy      delete user with id 1
+
+you can also add custom route by adding in routes.rb
+
+validation is something done by model right 
+
+model is inheriting activerecord:Base that is provinng logic to talk to database. talk to model called users with 
+primarykey. for every table u will have model interacting with it
+
+Userscontroller<Application controller<Actioncontroller:: Base
+
+public mehtod in controller is action
+
+for every route this controller this action in routes.rb
+
+all instance variables can also be accessed in view directly
+
+retrive data form database and store in instance variable of controller action(public method)
+and we use that instance variable in views to show the data on front end
+
+rake db:migrate
+rake db:rollback
+rake db:rollback STEP=3
+
+Active record validations
+
+allow you to  validate before saving it to database
+
+class Customer < ActiveRecord::Base
+
+the model is basically like a simple class
+
+Customer class talks to table called customers(table inside database), (name in customers table can be accessed by calllng name method) model and table has one on one relationship and a cusotmer object can be called as custoemr.name or cusotmer.email
+
+validates: email, uniqueness: true, presence: true, length: {minimum :2}
+depending upon need we use these validations
+
+there are also custom validations in the methods
+
+Active record callbacks are basically used
+
+customers?state=CA&country = USA
+
+params [:state]
+params [:country]
+
+
+
+resources: photos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
